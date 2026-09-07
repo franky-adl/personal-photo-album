@@ -27,7 +27,7 @@ Output goes to `dist/`.
 
 Album photos are from free image platforms; the video is from [Pixabay](https://pixabay.com/). Below lists the sources of all free blender models used in the scene.
 
-- [Desk Globe](https://www.blendkit.com/asset-gallery-detail/25f2ec5a-fdc1-45e8-9644-7a57a581b3f4/)
+- [Desk Globe](https://www.blendkit.com/asset-gallery-detail/25f2ec5a-fdc1-45e8-9644-7a57a581b3f4/) (Royalty free)
 - [AT-AT walker](https://sketchfab.com/3d-models/at-at-walker-star-wars-low-poly-719c023782fb4bb9898d15f9e3fcee6b) (CC Attribution)
 - [BB8 Droid](https://sketchfab.com/3d-models/bb8-droid-8d4f7dbd7dbd476c81e2a4c9bf0664f8) (CC Attribution)
 - [Cup of coffee](https://www.blenderkit.com/asset-gallery-detail/51c87c04-94ad-4978-b47d-a2b08fb01d96/) (Royalty free)
