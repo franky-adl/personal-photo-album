@@ -1,0 +1,472 @@
+[
+    {
+        "label": "Biei",
+        "photos": [
+            {
+                "src": "biei_night.webp",
+                "x": 0.67,
+                "y": 0.68,
+                "rotation": 0.04,
+                "scale": 0.48
+            },
+            {
+                "src": "biei_tree2.webp",
+                "x": 0.3,
+                "y": 0.35,
+                "rotation": -0.04,
+                "scale": 0.4
+            }
+        ],
+        "texts": [
+            {
+                "text": "Hokkaido\nwinter!",
+                "x": 0.7,
+                "y": 0.38,
+                "color": "#516ede",
+                "fontWeight": 700,
+                "size": 0.05
+            },
+            {
+                "text": "A lone tree on the snowfield!",
+                "x": 0.3,
+                "y": 0.59,
+                "color": "#516ede",
+                "size": 0.03,
+                "rotation": -0.04
+            },
+            {
+                "text": "Blue Pond light-up~",
+                "x": 0.67,
+                "y": 0.91,
+                "color": "#516ede",
+                "size": 0.03,
+                "rotation": 0.04
+            }
+        ],
+        "stamps": [
+            {
+                "src": "hokkaido-stamp.webp",
+                "x": 0.7,
+                "y": 0.2,
+                "rotation": -0.04,
+                "scale": 0.2
+            }
+        ]
+    },
+    {
+        "label": "Biei",
+        "photos": [
+            {
+                "src": "biei_blueriver.webp",
+                "x": 0.35,
+                "y": 0.26,
+                "rotation": -0.035,
+                "scale": 0.58
+            },
+            {
+                "src": "biei_waterfall.webp",
+                "x": 0.72,
+                "y": 0.68,
+                "rotation": 0.03,
+                "scale": 0.42
+            },
+            {
+                "src": "biei_jinjia.webp",
+                "x": 0.26,
+                "y": 0.74,
+                "rotation": -0.02,
+                "scale": 0.32
+            }
+        ],
+        "texts": [
+            {
+                "text": "Blue Pond,\n still as glass~",
+                "x": 0.78,
+                "y": 0.3,
+                "color": "#09498F",
+                "size": 0.034
+            },
+            {
+                "text": "Shirahige Falls!",
+                "x": 0.82,
+                "y": 0.88,
+                "rotation": 0.02,
+                "size": 0.034
+            },
+            {
+                "text": "A quiet shrine in the snow",
+                "x": 0.27,
+                "y": 0.89,
+                "rotation": -0.02,
+                "size": 0.03
+            }
+        ]
+    },
+    {
+        "label": "Asahi cats",
+        "photos": [
+            {
+                "src": "Asahi_cat2.webp",
+                "x": 0.36,
+                "y": 0.38,
+                "rotation": -0.035,
+                "scale": 0.44
+            },
+            {
+                "src": "Asahi_cat.webp",
+                "x": 0.66,
+                "y": 0.67,
+                "rotation": 0.04,
+                "scale": 0.36
+            }
+        ],
+        "texts": [
+            {
+                "text": "Snow-day visitor~",
+                "x": 0.76,
+                "y": 0.3,
+                "color": "#8a5c0c",
+                "size": 0.034
+            },
+            {
+                "text": "This fluffy one\nis too cute =p",
+                "x": 0.67,
+                "y": 0.86,
+                "color": "#8a5c0c",
+                "size": 0.034,
+                "rotation": 0.035
+            }
+        ],
+        "stamps": [
+            {
+                "src": "play-ball.webp",
+                "x": 0.76,
+                "y": 0.16,
+                "scale": 0.2
+            },
+            {
+                "src": "ginger-cat.webp",
+                "x": 0.26,
+                "y": 0.84,
+                "rotation": 0.04,
+                "scale": 0.2
+            }
+        ]
+    },
+    {
+        "label": "Asahi-dake",
+        "photos": [
+            {
+                "src": "Asahi_dake2.webp",
+                "x": 0.36,
+                "y": 0.28,
+                "rotation": -0.03,
+                "scale": 0.6
+            },
+            {
+                "src": "Asahi_dake.webp",
+                "x": 0.68,
+                "y": 0.64,
+                "rotation": 0.025,
+                "scale": 0.44
+            }
+        ],
+        "texts": [
+            {
+                "text": "Absolutely stunning views!!\n10/10!",
+                "x": 0.75,
+                "y": 0.19,
+                "color": "#21435e",
+                "size": 0.034
+            }
+        ],
+        "stamps": [
+            {
+                "src": "mountain-stamp.webp",
+                "x": 0.23,
+                "y": 0.84,
+                "rotation": 0.04,
+                "scale": 0.24
+            }
+        ]
+    },
+    {
+        "label": "Sounkyo hike",
+        "photos": [
+            {
+                "src": "Sōunkyō_hike2.webp",
+                "x": 0.28,
+                "y": 0.32,
+                "rotation": -0.04,
+                "scale": 0.36
+            },
+            {
+                "src": "Sōunkyō_hike.webp",
+                "x": 0.64,
+                "y": 0.48,
+                "rotation": 0.025,
+                "scale": 0.46
+            },
+            {
+                "src": "Sōunkyō_hike3.webp",
+                "x": 0.28,
+                "y": 0.78,
+                "rotation": 0.05,
+                "scale": 0.28
+            }
+        ],
+        "texts": [
+            {
+                "text": "Winter trail at Noboribetsu~",
+                "x": 0.68,
+                "y": 0.25,
+                "color": "#21435e",
+                "size": 0.034
+            },
+            {
+                "text": "Blue ice, like a cave of glass!",
+                "x": 0.63,
+                "y": 0.92,
+                "color": "#21435e",
+                "size": 0.034
+            }
+        ],
+        "stamps": [
+            {
+                "src": "sable-stamp.webp",
+                "x": 0.73,
+                "y": 0.81,
+                "rotation": -0.05,
+                "scale": 0.14
+            }
+        ]
+    },
+    {
+        "label": "Sounkyo ice festival + station",
+        "photos": [
+            {
+                "src": "Sōunkyō_icefes.webp",
+                "x": 0.38,
+                "y": 0.26,
+                "rotation": -0.03,
+                "scale": 0.56
+            },
+            {
+                "src": "Sōunkyō_icefes2.webp",
+                "x": 0.7,
+                "y": 0.68,
+                "rotation": 0.035,
+                "scale": 0.4
+            },
+            {
+                "src": "Sōunkyō_station.webp",
+                "x": 0.28,
+                "y": 0.74,
+                "rotation": -0.02,
+                "scale": 0.4
+            }
+        ],
+        "texts": [
+            {
+                "text": "Sounkyo Ice Festival\nin the falling snow!!",
+                "x": 0.83,
+                "y": 0.3,
+                "color": "#e3123f",
+                "size": 0.032,
+                "rotation": 0.035
+            },
+            {
+                "text": "Carved from ice~\n(so cold@@)",
+                "x": 0.3,
+                "y": 0.54,
+                "color": "#e3123f",
+                "size": 0.034,
+                "rotation": -0.02
+            }
+        ]
+    },
+    {
+        "label": "Kussharo",
+        "photos": [
+            {
+                "src": "Kussharo_swans.webp",
+                "x": 0.4,
+                "y": 0.28,
+                "rotation": -0.03,
+                "scale": 0.58
+            },
+            {
+                "src": "Kussharo_onsen.webp",
+                "x": 0.65,
+                "y": 0.69,
+                "rotation": 0.035,
+                "scale": 0.48
+            },
+            {
+                "src": "Kussharo_post.webp",
+                "x": 0.2,
+                "y": 0.72,
+                "rotation": -0.06,
+                "scale": 0.24
+            }
+        ],
+        "texts": [
+            {
+                "text": "Lake Kussharo,\nwinter",
+                "x": 0.8,
+                "y": 0.25,
+                "color": "#467efe",
+                "size": 0.032
+            },
+            {
+                "text": "Steam, swans, and a soak!",
+                "x": 0.64,
+                "y": 0.92,
+                "color": "#467efe",
+                "size": 0.03,
+                "rotation": 0.03
+            }
+        ],
+        "stamps": [
+            {
+                "src": "kussharo-stamp.webp",
+                "x": 0.8,
+                "y": 0.46,
+                "rotation": 0.02,
+                "scale": 0.14
+            }
+        ]
+    },
+    {
+        "label": "Abashiri",
+        "photos": [
+            {
+                "src": "abashiri_landscape.webp",
+                "x": 0.4,
+                "y": 0.3,
+                "rotation": -0.025,
+                "scale": 0.62
+            },
+            {
+                "src": "abashiri_seaview.webp",
+                "x": 0.66,
+                "y": 0.7,
+                "rotation": 0.04,
+                "scale": 0.35
+            }
+        ],
+        "texts": [
+            {
+                "text": "Abashiri,\nwinter coast",
+                "x": 0.82,
+                "y": 0.26,
+                "color": "#09498F",
+                "size": 0.034
+            },
+            {
+                "text": "Floating ice on the sea",
+                "x": 0.23,
+                "y": 0.79,
+                "color": "#09498F",
+                "size": 0.03
+            }
+        ],
+        "stamps": [
+            {
+                "src": "abashiri-stamp.webp",
+                "x": 0.22,
+                "y": 0.68,
+                "rotation": -0.02,
+                "scale": 0.14
+            }
+        ]
+    },
+    {
+        "label": "Obihiro",
+        "photos": [
+            {
+                "src": "obihiro_citycentre.webp",
+                "x": 0.36,
+                "y": 0.3,
+                "rotation": -0.025,
+                "scale": 0.4
+            },
+            {
+                "src": "snowing_scene.mp4",
+                "poster": "snowing_scene.png",
+                "x": 0.63,
+                "y": 0.72,
+                "rotation": 0.03,
+                "scale": 0.5
+            }
+        ],
+        "texts": [
+            {
+                "text": "Snowy streets,\nObihiro",
+                "x": 0.72,
+                "y": 0.26,
+                "color": "#21435e",
+                "size": 0.034
+            },
+            {
+                "text": "Heavy snowfall that day\n at the station",
+                "x": 0.2,
+                "y": 0.76,
+                "color": "#21435e",
+                "size": 0.03
+            }
+        ]
+    },
+    {
+        "label": "Sapporo",
+        "photos": [
+            {
+                "src": "Sapporo_ski2.webp",
+                "x": 0.42,
+                "y": 0.26,
+                "rotation": -0.03,
+                "scale": 0.68
+            },
+            {
+                "src": "Sapporo_city.webp",
+                "x": 0.74,
+                "y": 0.68,
+                "rotation": 0.03,
+                "scale": 0.34
+            },
+            {
+                "src": "Sapporo_ski1.webp",
+                "x": 0.3,
+                "y": 0.74,
+                "rotation": -0.025,
+                "scale": 0.44
+            }
+        ],
+        "texts": [
+            {
+                "text": "Powder day in\nSapporo!",
+                "x": 0.3,
+                "y": 0.56,
+                "color": "#10533b",
+                "size": 0.034,
+                "rotation": -0.02
+            },
+            {
+                "text": "What a lookout~",
+                "x": 0.82,
+                "y": 0.86,
+                "color": "#10533b",
+                "size": 0.025,
+                "rotation": -0.1
+            },
+            {
+                "text": "The End ~",
+                "x": 0.92,
+                "y": 0.95,
+                "color": "#10533b",
+                "size": 0.028,
+                "rotation": 0.04
+            }
+        ]
+    }
+]

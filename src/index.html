@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>My Photo Album</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap"
+            rel="stylesheet"
+        />
+        <style>
+            .loading-overlay {
+                position: fixed;
+                inset: 0;
+                z-index: 10000;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: #b4a9a1;
+                background-image: url("/Blur_sceneCap.webp");
+                background-size: cover;
+                background-position: center;
+                opacity: 1;
+                transition: opacity 0.8s ease;
+                user-select: none;
+            }
+            .loading-overlay.is-hidden {
+                opacity: 0;
+                pointer-events: none;
+            }
+            .loading-title {
+                margin: 0;
+                padding: 0 8vw;
+                font-family: Caveat, cursive;
+                font-weight: 500;
+                font-size: clamp(2rem, 5.5vw, 4.5rem);
+                line-height: 1.15;
+                text-align: center;
+                color: #f6f4f0;
+                visibility: hidden;
+            }
+            .loading-title.is-split {
+                visibility: visible;
+            }
+            .loading-content {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+            .loading-landscape-hint {
+                display: none;
+                opacity: 0;
+            }
+            .loading-status {
+                position: absolute;
+                left: 0;
+                right: 0;
+                bottom: 6vh;
+                margin: 0;
+                font-family: Caveat, cursive;
+                font-size: clamp(1.2rem, 2.5vw, 1.8rem);
+                text-align: center;
+                color: #f6f4f0;
+            }
+        </style>
+    </head>
+    <body>
+        <div
+            id="loading-overlay"
+            class="loading-overlay"
+            role="status"
+            aria-busy="true"
+            aria-live="polite"
+        >
+            <div class="loading-content">
+                <h1 class="loading-title">My Interactive Photo Album</h1>
+                <div class="loading-landscape-hint">
+                    <svg
+                        class="loading-landscape-icon"
+                        viewBox="0 0 64 40"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        aria-hidden="true"
+                    >
+                        <rect
+                            x="2.5"
+                            y="7.5"
+                            width="59"
+                            height="25"
+                            rx="5"
+                            stroke="currentColor"
+                            stroke-width="2.5"
+                        />
+                        <circle cx="11" cy="20" r="2" fill="currentColor" />
+                    </svg>
+                    <p class="loading-landscape-text">
+                        Turn your phone to landscape for the best experience
+                    </p>
+                </div>
+            </div>
+            <p class="loading-status">loading...</p>
+        </div>
+        <div id="root"></div>
+        <script type="module" src="./index.jsx"></script>
+    </body>
+</html>

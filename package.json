@@ -1,0 +1,30 @@
+{
+    "name": "my-photo-album",
+    "private": true,
+    "version": "0.0.1",
+    "type": "module",
+    "scripts": {
+        "dev": "vite",
+        "build": "vite build"
+    },
+    "devDependencies": {
+        "@eslint/js": "^9.39.2",
+        "@vitejs/plugin-react": "5.1.2",
+        "eslint": "^9.39.2",
+        "eslint-plugin-react": "^7.37.5",
+        "globals": "^17.1.0",
+        "vite": "^7.3.0",
+        "vite-plugin-glsl": "^1.5.5",
+        "vite-plugin-restart": "^2.0.0"
+    },
+    "dependencies": {
+        "@react-three/drei": "^10.0.4",
+        "@react-three/fiber": "^9.1.0",
+        "gsap": "^3.15.0",
+        "leva": "0.10",
+        "r3f-perf": "^7.2.3",
+        "react": "19.0",
+        "react-dom": "19.0",
+        "three": "^0.182.0"
+    }
+}

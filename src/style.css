@@ -1,0 +1,289 @@
+html,
+body,
+#root {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #b4a9a1; /* matching wall color */
+}
+
+.loading-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 10000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #b4a9a1;
+    background-image: url("/Blur_sceneCap.webp");
+    background-size: cover;
+    background-position: center;
+    opacity: 1;
+    transition: opacity 0.8s ease;
+    pointer-events: none;
+    user-select: none;
+}
+
+.loading-overlay.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.loading-title {
+    margin: 0;
+    padding: 0 8vw;
+    font-family: Caveat, cursive;
+    font-weight: 500;
+    font-size: clamp(2rem, 5.5vw, 4.5rem);
+    line-height: 1.15;
+    text-align: center;
+    color: #f6f4f0;
+    visibility: hidden;
+    overflow: visible;
+    font-kerning: none;
+    text-rendering: optimizeSpeed;
+}
+
+.loading-title.is-split {
+    visibility: visible;
+}
+
+.loading-title .char {
+    display: inline-block;
+    will-change: transform, opacity;
+}
+
+.loading-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.loading-landscape-hint {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.55rem;
+    margin-top: 1.6rem;
+    padding: 0 10vw;
+    opacity: 0;
+    transition: opacity 0.55s ease;
+}
+
+.loading-landscape-hint.is-visible {
+    opacity: 1;
+}
+
+.loading-landscape-icon {
+    display: block;
+    width: 52px;
+    height: auto;
+    color: #f6f4f0;
+}
+
+.loading-landscape-text {
+    margin: 0;
+    font-family: Caveat, cursive;
+    font-weight: 500;
+    font-size: clamp(1.05rem, 4.2vw, 1.45rem);
+    line-height: 1.3;
+    text-align: center;
+    color: #f6f4f0;
+}
+
+@media (max-width: 1024px) and (orientation: portrait) {
+    .loading-landscape-hint {
+        display: flex;
+    }
+}
+
+.loading-status {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 6vh;
+    margin: 0;
+    font-family: Caveat, cursive;
+    font-size: clamp(1.2rem, 2.5vw, 1.8rem);
+    text-align: center;
+    color: #f6f4f0;
+}
+
+.float-hint {
+    pointer-events: none;
+    user-select: none;
+    white-space: nowrap;
+    font-family: Caveat, cursive;
+    font-weight: 600;
+    font-size: 42px;
+    opacity: 0;
+    animation: globe-hint-float 2.4s ease-in-out infinite;
+}
+
+@keyframes globe-hint-float {
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-7px);
+    }
+}
+
+.book-back {
+    position: absolute;
+    top: max(18px, env(safe-area-inset-top));
+    left: max(18px, env(safe-area-inset-left));
+    z-index: 20;
+    display: grid;
+    place-items: center;
+    width: 32px;
+    height: 32px;
+    padding: 0;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition:
+        opacity 0.45s ease,
+        visibility 0s linear 0.45s;
+}
+
+.book-back.is-visible {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transition:
+        opacity 0.45s ease,
+        visibility 0s linear 0s;
+}
+
+.book-back img {
+    display: block;
+    width: 32px;
+    height: 32px;
+    transform-origin: center;
+}
+
+.book-back:hover img {
+    animation: book-back-hover 0.7s
+        linear(
+            0,
+            0.09 6.5%,
+            0.36 19%,
+            0.64 31%,
+            0.98 44%,
+            0.75 54%,
+            0.98 66%,
+            0.9 72%,
+            0.98 80%,
+            0.95 84%,
+            1
+        );
+}
+
+@keyframes book-back-hover {
+    0% {
+        transform: scale(1) rotate(0deg);
+    }
+    45% {
+        transform: scale(1.22) rotate(-12deg);
+    }
+    100% {
+        transform: scale(1) rotate(0deg);
+    }
+}
+
+.book-back:focus-visible,
+.page-nav:focus-visible {
+    outline: 1px solid #2c2c2c;
+    outline-offset: 4px;
+}
+
+.page-nav {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: 20;
+    display: grid;
+    place-items: center;
+    width: 48px;
+    height: 48px;
+    margin: auto 0;
+    padding: 0;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition:
+        opacity 0.45s ease,
+        visibility 0s linear 0.45s;
+}
+
+.page-nav.is-visible,
+.page-nav.is-visible:disabled {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transition:
+        opacity 0.45s ease,
+        visibility 0s linear 0s;
+}
+
+.page-nav-prev {
+    left: max(18px, env(safe-area-inset-left));
+}
+
+.page-nav-next {
+    right: max(18px, env(safe-area-inset-right));
+}
+
+.page-nav-icon {
+    display: grid;
+    place-items: center;
+}
+
+.page-nav-prev .page-nav-icon {
+    transform: rotate(180deg);
+}
+
+.page-nav img {
+    display: block;
+    width: 32px;
+    height: 32px;
+    transform-origin: center;
+    opacity: 1;
+    transition: opacity 0.35s ease;
+}
+
+.page-nav.is-disabled {
+    cursor: default;
+}
+
+.page-nav.is-disabled img {
+    opacity: 0.28;
+}
+
+.page-nav:not(.is-disabled):hover img {
+    animation: book-back-hover 0.7s
+        linear(
+            0,
+            0.09 6.5%,
+            0.36 19%,
+            0.64 31%,
+            0.98 44%,
+            0.75 54%,
+            0.98 66%,
+            0.9 72%,
+            0.98 80%,
+            0.95 84%,
+            1
+        );
+}
