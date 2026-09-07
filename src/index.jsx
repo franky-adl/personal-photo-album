@@ -4,6 +4,7 @@ import ReactDOM from "react-dom/client";
 import { Canvas } from "@react-three/fiber";
 import { CineonToneMapping } from "three";
 import Experience from "./Experience.jsx";
+import Overlay from "./Overlay.jsx";
 import { setBookFocus, subscribeBookFocus } from "./Camera";
 import { requestPageFlip, subscribePageNav } from "./objects/BookPages.jsx";
 import {
@@ -101,6 +102,7 @@ function App() {
                 </Canvas>
             )}
             <BookHud />
+            <Overlay />
         </>
     );
 }
